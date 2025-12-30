@@ -1,0 +1,45 @@
+{
+  "name": "referral-system",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Vercel Database-Free Referral System with Revenue Check",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build required'",
+    "start": "vercel start",
+    "deploy": "vercel --prod",
+    "test": "node test-system.js"
+  },
+  "keywords": [
+    "referral",
+    "vercel",
+    "serverless",
+    "database-free",
+    "secure",
+    "hmac",
+    "flutter"
+  ],
+  "author": "HelpDo Team",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/node": "^4.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "vercel": {
+    "functions": {
+      "api/ref/[...slug].js": {
+        "maxDuration": 10,
+        "memory": 128
+      },
+      "api/check-revenue/index.js": {
+        "maxDuration": 30,
+        "memory": 256
+      }
+    }
+  }
+}
