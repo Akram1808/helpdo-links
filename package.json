@@ -1,0 +1,35 @@
+{
+  "name": "helpdo",
+  "version": "1.0.0",
+  "description": "Welcome to HelpSmart! Flutter client with Supabase backend and Vercel Edge API.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akram1808/helpdo-links.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akram1808/helpdo-links/issues"
+  },
+  "homepage": "https://github.com/Akram1808/helpdo-links#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "undici-types": "^7.16.0"
+  }
+}
